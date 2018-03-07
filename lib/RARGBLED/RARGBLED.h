@@ -42,13 +42,13 @@ class RARGBLED {
           void setFadeRGB(int lowNumber, int highNumber, int value);
           void police(int times,int delayTime);
      private:
-          int _RedPin;
-          int _GreenPin;
-          int _BluePin;
-          int _Red;
-          int _Green;
-          int _Blue;
-          int _Config;
+          int m_RedPin;
+          int m_GreenPin;
+          int m_BluePin;
+          int m_Red;
+          int m_Green;
+          int m_Blue;
+          int m_Config;
 };
 
 #endif
