@@ -52,5 +52,4 @@ void loop() {
      // Fast red blue fade 40 times
      myLED.police(40,1);
      myLED.off();
-
 }
