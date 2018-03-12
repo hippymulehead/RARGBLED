@@ -13,19 +13,15 @@ myRGB.on(); Turns it back on to the last color used.
 #ifndef RARGBLED_H
 #define RARGBLED_H
 
-class Color {
-     public:
-          enum LEDColors_t {
-               RED,
-               GREEN,
-               BLUE,
-               WHITE,
-               YELLOW,
-               CYAN,
-               PURPLE,
-               MAGENTA
-          };
-     private:
+enum COLOR {
+    RED,
+    GREEN,
+    BLUE,
+    WHITE,
+    YELLOW,
+    CYAN,
+    PURPLE,
+    MAGENTA
 };
 
 class RARGBLED {
@@ -37,7 +33,7 @@ class RARGBLED {
           void off();
           void on();
           void twinkle(unsigned long mil);
-          void setColor(Color::LEDColors_t color);
+          void setColor(COLOR color);
           void setFadeBGR(int lowNumber, int highNumber, int value);
           void setFadeRGB(int lowNumber, int highNumber, int value);
           void police(int times,int delayTime);

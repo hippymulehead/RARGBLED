@@ -3,7 +3,7 @@
 "frameworks": "Arduino",
 "keywords": "rgb,led",
 "description": "Arduino lib for RGB LEDs",
-"version": "1.0.2",
+"version": "1.0.3",
 "url": "https://github.com/hippymulehead/RARGBLED",
 "authors":
 [

@@ -93,16 +93,16 @@ void RARGBLED::on() {
      setRGBColor(m_Red, m_Green, m_Blue);
 }
 
-void RARGBLED::setColor(Color::LEDColors_t color) {
+void RARGBLED::setColor(COLOR color) {
      switch (color) {
-          case Color::RED: {m_Red = 255; m_Green = 0; m_Blue = 0; break;}
-          case Color::GREEN: {m_Red = 0; m_Green = 255; m_Blue = 0; break;}
-          case Color::BLUE: {m_Red = 0; m_Green = 0; m_Blue = 255; break;}
-          case Color::WHITE: {m_Red = 255; m_Green = 255; m_Blue = 255; break;}
-          case Color::YELLOW: {m_Red = 255; m_Green = 255; m_Blue = 0; break;}
-          case Color::CYAN: {m_Red = 0; m_Green = 255; m_Blue = 255; break;}
-          case Color::PURPLE: {m_Red = 128; m_Green = 0; m_Blue = 128; break;}
-          case Color::MAGENTA: {m_Red = 255; m_Green = 0; m_Blue = 255; break;}
+          case RED: {m_Red = 255; m_Green = 0; m_Blue = 0; break;}
+          case GREEN: {m_Red = 0; m_Green = 255; m_Blue = 0; break;}
+          case BLUE: {m_Red = 0; m_Green = 0; m_Blue = 255; break;}
+          case WHITE: {m_Red = 255; m_Green = 255; m_Blue = 255; break;}
+          case YELLOW: {m_Red = 255; m_Green = 255; m_Blue = 0; break;}
+          case CYAN: {m_Red = 0; m_Green = 255; m_Blue = 255; break;}
+          case PURPLE: {m_Red = 128; m_Green = 0; m_Blue = 128; break;}
+          case MAGENTA: {m_Red = 255; m_Green = 0; m_Blue = 255; break;}
      }
      setRGBColor(m_Red, m_Green, m_Blue);
 }
