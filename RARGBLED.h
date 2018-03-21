@@ -12,6 +12,7 @@ myRGB.on(); Turns it back on to the last color used.
 */
 #ifndef RARGBLED_H
 #define RARGBLED_H
+#include <RAGPIO.h>
 
 enum COLOR {
     RED,
@@ -29,6 +30,7 @@ class RARGBLED {
           #define CommonAnode 1
           #define CommonCathode 0
           RARGBLED(int redPin, int greenPin, int bluePin, int config = CommonAnode);
+          DigitalOut M_REDPIN(redPin,0);
           void setRGBColor(int red, int green, int blue);
           void off();
           void on();
